@@ -1,0 +1,26 @@
+    body {
+        height: 100vh;
+        width: 100vw;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .basicCss {
+        width: 100px;
+        height: 100px;
+        background-color: lightcoral;
+    }
+
+    .border {
+        border: 1px solid;
+    }
+
+      /* this is bad .div1 {
+        display: inline-block;
+      } */
+
+    .maindiv{
+        /* padding */
+        display: flex;
+        justify-content: space-between;
+    }
