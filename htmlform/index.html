@@ -8,14 +8,19 @@
 <body>
     <h1>Student Record</h1>
 
-    <form>
+    <form action="" autocomplete="on" novalidate >
+
+        <fieldset style="width: 23%;">
+
+            <legend style="border:1px solid; border-radius: 50%; padding: 12px 4px; text-align: center;">Form</legend>
+
         <label for="name" >Your Name:</label>
         <input type="name" placeholder="Enter your name" id="name" name="name1"><br><br>
 
-        <label for="password" >Your password :</label>
+        <label for="password" >Your Password:</label>
         <input type="password" placeholder="Enter your password" id="password" name="name2"><br><br>
 
-        <label for="">Gender</label>
+        <span>Enter Your Gender:</span>
 
         <input type="radio" id="male" name="gen">
         <label for="male">Male</label>
@@ -38,10 +43,23 @@
         <label for="react">REACT</label> <br>
 
         <input type="checkbox" name="python" id="python">
-        <label for="python">PYTHON</label> <br><br>
+        <label for="python">PYTHON</label> <br> <br>
+
+        <label for="lang">Select your fav. lang:</label>
+        <select name="Languages" id="lang"m>
+            <option value="" disabled selected>Select your  lang.</option>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JS">JS</option>
+            <option value="REACT">REACT</option>
+            <option value="PYTHON">PYTHON</option>
+        </select><br><br>
+
+        <textarea name="ytDesc" id="" rows="2" cols="32" placeholder="Enter your suggestions"></textarea> <br> <br>
 
         <input type="button" value="SUMBIT" name="sumbit" id="">
-        
+
+        </fieldset>  
 
      </form>
     
