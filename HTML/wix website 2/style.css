@@ -1,27 +1,33 @@
+      body{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
       .maindiv {
         background-color: #e5ebed;
       }
                                            /* wix  style section start from here*/
       .wixsection {
-        position: fixed;
         display: flex;
         justify-content: space-around;
         background-color: #ffffff;
         /* border: 1px solid; */
         width: 100%;
         align-items: center;
+        position: fixed;
+        z-index: 10;
       }
       .wixlogosection {
         /* border: 1px solid; */
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 280px;
+        gap: 210px;
       }
       .wixcontentsection {
         display: flex;
         /* border: 1px solid; */
-        width: 40%;
+        width: 41%;
         height: 65px;
         justify-content: space-around;
         align-items: center;
@@ -36,7 +42,7 @@
       }
 
       .wiximage {
-        width: 10%;
+        width: 11%;
       }
       .computericon {
         width: 13%;
@@ -46,7 +52,7 @@
         width: 8%;
         cursor: pointer;
       }
-      .emptydiv {
+      .emptyline {
         border: 1px solid;
         height: 24px;
       }
@@ -54,10 +60,14 @@
         font-size: 18px;
         color: #3c4a54;
       }
-      .readdiv>p{
-        font-size: 18px;
-        color: #3c4a54;
-        cursor: pointer;
+      .readdiv{
+        font-size: 17px;
+      }
+      .readdiv>a{
+         color: #3c4a54;
+      }
+      .readdiv>a:hover{
+        color: #5A43DE;
       }
       .wixbuttondiv>p{
         border: 1px solid;
@@ -67,15 +77,61 @@
         font-size: 18px;
         display: flex;
         justify-content: center;
-        padding: 10px 18px;
+        padding: 10px 27px;
         cursor: pointer;
+      }
+      .wixbuttondiv>p:hover{
+        background-color:#4d33de ;
+      }
+      .wixbuttondiv>a{
+        text-decoration: none;
       }
                                     /* rio style section start from here  */
       .riosection {
         width: 100%;
+        position: relative;
+      }
+      .riocontent{
+        color: #ffffff;
+        position: absolute;
+        top: 40px;
+        left: 455px;
+        font-size: 17px;
+      }
+      .riocontent>span:hover{
+        color: #393c47;
+      }
+      .riocontent>span{
+        cursor: pointer;
+        padding: 0px 83px;
+      }
+      .innerriocontent{
+        position: absolute;
+        color: #ffffff;
+        top: 190px;
+        left: 625px;
+      }
+      .innerriocontent>span{
+        padding: 13px;
+        font-size: 18px;
+      }
+      .innerriocontent>img{
+        width: 60px;
+        height: 6px;
+      }
+      .welcomediv{
+        color: #ffffff ;
+        position: absolute;
+        top: 220px;
+        left: 534px;
+      }
+      .welcomediv>p{
+        font-size: 69px;
+        color:  #ffffff;
+        margin: 0px;
       }
       .rioimgdiv {
-        height: 585px;
+        height: 608px;
       }
                                        /* aboutrio style section start from here  */
       .aboutriosection {
@@ -208,7 +264,7 @@
       }
       .emptysection {
         border: 1px solid#ffb730;
-        width: 9%;
+        width: 7%;
       }
       .peoplecontentdiv {
         background-color: #6aa3a2;
@@ -256,6 +312,9 @@
         color: #8f9091;
         font-size: 18px;
       }
+      .maildiv>span{
+        cursor: pointer;
+      }
       .followcolumn {
         /* border: 1px solid; */
         display: flex;
@@ -270,7 +329,8 @@
       }
       .followimg {
         display: flex;
-        width: 40px;
+        width: 130px;
+        gap: 13px;
       }
       .subscribecolumn {
         /* border: 1px solid; */
@@ -316,5 +376,31 @@
         width: 64%;
         margin-left: 18%;
         color: #8f9091;
-        padding: 5px 0px;
+        padding: 16px 0px;
+      }
+      .endsection>p{
+        margin: 0px;
+      }
+      .endsection>p>a{
+        color: #8f9091;
+      }
+                                   /* chat  style section start from here */
+      .chatbox{
+       padding: 16px 38px;
+       color: #ffffff;
+       background-color: #6aa3a2;
+       display: flex;
+       align-items: center;
+       font-size: 20px;
+       border-radius: 8px;
+       cursor: pointer;
+       position: fixed;
+       bottom: 20px;
+       right: 28px;
+      }
+      .chatbox>img{
+        width: 20px;
+      }
+      .chatbox>span{
+        padding-left: 10px;
       }
